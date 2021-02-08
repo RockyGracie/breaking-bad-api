@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Cards from './components/Cards';
 import Form from './components/Form';
+import Logo from './components/Logo';
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
 
   return (
     <div className="container">
+      <Logo />
       <Form />
       <Cards data={data} />
     </div>
