@@ -1,15 +1,21 @@
 import React from 'react';
 import Card from './Card';
+import Spinner from './Spinner';
 
-const Cards = ({ data }) => {
-   console.log(data)
+const Cards = ({ data, isLoading }) => {
 
    return (
-      <div className="cards">
-         {data.map(character => (
+      <>
+         {isLoading ? (
+            <Spinner />
+         ) : (
+         <div className="cards">
+            {data.map(character => (
             <Card key={character.char_id} {...character} />
-         ))}
-      </div>
+            ))}
+         </div>
+         )}
+      </>
    );
 };
 
