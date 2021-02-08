@@ -5,7 +5,7 @@ const Cards = ({ data }) => {
    console.log(data)
 
    return (
-      <div>
+      <div className="cards">
          {data.map(character => (
             <Card key={character.char_id} {...character} />
          ))}
