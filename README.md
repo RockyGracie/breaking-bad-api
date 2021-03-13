@@ -1,3 +1,3 @@
 # Breaking Bad API
 
-Application to search characters from Breaking Bad serie.
+## Application to search and filter characters from the Breaking Bad tv show.
